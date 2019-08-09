@@ -2,11 +2,14 @@
 
 public class Player : MonoBehaviour
 {
-	Animator animator;
+	private Animator animator;
+
+    private Grabber grabber;
 
 	void Awake ()
 	{
 		animator = GetComponent<Animator>();
+        grabber = GetComponent<Grabber>();
 	}
 
 	void Update ()
@@ -49,6 +52,9 @@ public class Player : MonoBehaviour
             animator.SetInteger("attackType", 2);
             animator.SetTrigger("attack");
         }
+
+        // Grab item
+        grabber.Grab();
     }
 
     bool OnGround ()

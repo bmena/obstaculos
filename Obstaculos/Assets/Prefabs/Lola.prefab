@@ -491,6 +491,7 @@ Transform:
   - {fileID: 1031477810}
   - {fileID: 1291653423}
   - {fileID: 230536701}
+  - {fileID: 7897372485961337719}
   m_Father: {fileID: 1393355867}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1347,6 +1348,7 @@ GameObject:
   - component: {fileID: 1450997636}
   - component: {fileID: 1450997635}
   - component: {fileID: 1450997634}
+  - component: {fileID: 225785871640311551}
   m_Layer: 0
   m_Name: Lola
   m_TagString: Player
@@ -1431,6 +1433,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8a68cf41b15402b9f86f78fc59e4c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &225785871640311551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450997633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bcc8a8cd673745f9b8385937b1a83df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabCenter: {fileID: 0}
+  grabRadius: 2
+  pickupAnchor: {fileID: 7897372485961337719}
 --- !u!1 &1458669620
 GameObject:
   m_ObjectHideFlags: 0
@@ -2256,4 +2273,34 @@ Transform:
   - {fileID: 2078559843}
   m_Father: {fileID: 1492531985}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1961550344812702209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7897372485961337719}
+  m_Layer: 9
+  m_Name: PickupAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7897372485961337719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961550344812702209}
+  m_LocalRotation: {x: 0.8273867, y: 0.5586371, z: 0.05538067, w: -0.017000137}
+  m_LocalPosition: {x: 0.08599995, y: -0.041999944, z: 0.09700003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 517577667}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
