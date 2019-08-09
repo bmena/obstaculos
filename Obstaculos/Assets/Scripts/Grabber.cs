@@ -11,10 +11,18 @@ public class Grabber : MonoBehaviour
 
     public void Grab()
     {
-        var cols = Physics.OverlapSphere(grabCenter.position, grabRadius, 1 << LayerMask.NameToLayer("Pickable");
+        var cols = Physics.OverlapSphere(grabCenter.position, grabRadius, 1 << LayerMask.NameToLayer("Pickable"));
 
-        cols[0].transform.SetParent(pickupAnchor);
-        cols[0].transform.localPosition = Vector3.zero;
-        cols[0].transform.localRotation = Quaternion.identity;
+        if (cols != null && cols.Length > 0)
+        {
+            cols[0].transform.SetParent(pickupAnchor);
+            cols[0].transform.localPosition = Vector3.zero;
+            cols[0].transform.localRotation = Quaternion.identity;
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(grabCenter.position, grabRadius);
     }
 }

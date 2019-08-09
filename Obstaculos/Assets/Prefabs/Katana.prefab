@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 576574605}
   - component: {fileID: 576574604}
   - component: {fileID: 576574603}
+  - component: {fileID: 1819072322782289889}
   m_Layer: 9
   m_Name: Katana
   m_TagString: Untagged
@@ -93,3 +94,16 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!65 &1819072322782289889
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576574602}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13050236, y: 0.15174139, z: 1.4063998}
+  m_Center: {x: 0.00000001862645, y: -0.019614624, z: -0.30114803}
